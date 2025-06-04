@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_components_sport_types",
+  "info": {
+    "displayName": "sport-type"
+  },
+  "options": {},
+  "attributes": {
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "Run",
+        "Walk",
+        "Yoga",
+        "Mobility"
+      ]
+    }
+  },
+  "config": {}
+}
