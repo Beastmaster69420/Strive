@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Runner List</title>
+    <title>Activity List</title>
     <style>
         .runner-card {
             border: 1px solid #ccc;
@@ -15,11 +15,39 @@
     </style>
 </head>
 
-<body>
-    <h1>Runner Information</h1>
-    <div id="output">Loading...</div>
+<!-- ...existing code... -->
 
+<body>
+    <h1>Activity Information</h1>
+    <form id="runner-form">
+        <input type="hidden" id="record-id">
+        <label>
+            Distance (km):
+            <input type="number" id="distance" required>
+        </label>
+        <label>
+            Duration (mins):
+            <input type="number" id="duration" required>
+        </label>
+        <label>
+            Date:
+            <input type="date" id="date" required>
+        </label>
+        <label>
+            Type:
+            <select id="type" required>
+                <option value="">Loading...</option>
+            </select></label>
+        <label>
+            Description:
+            <input type="text" id="description" required>
+        </label>
+        <button type="submit" id="submit-btn">Add</button>
+        <button type="button" id="cancel-btn" style="display:none;">Cancel</button>
+    </form>
+    <div id="output">Loading...</div>
     <script src="main.js"></script>
 </body>
+<!-- ...existing code... -->
 
 </html>

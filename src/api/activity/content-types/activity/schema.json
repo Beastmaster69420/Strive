@@ -1,5 +1,5 @@
 {
-  "kind": "singleType",
+  "kind": "collectionType",
   "collectionName": "activities",
   "info": {
     "singularName": "activity",
@@ -20,13 +20,14 @@
     "Duration": {
       "type": "integer"
     },
-    "Type": {
-      "type": "component",
-      "component": "components.sport-type",
-      "repeatable": true
-    },
     "Description": {
       "type": "text"
+    },
+    "type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::type.type",
+      "inversedBy": "activities"
     }
   }
 }
